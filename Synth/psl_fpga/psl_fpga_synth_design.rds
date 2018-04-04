@@ -1,0 +1,986 @@
+Command: synth_design -mode default -flatten_hierarchy rebuilt -fanout_limit 60 -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5 -no_iobuf -top psl_fpga -part xc7vx690tffg1157-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t-ffg1157'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t-ffg1157'
+INFO: [Common 17-1223] The version limit for your license is '2017.12' and will expire in -84 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 38431 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1337.777 ; gain = 71.969 ; free physical = 6178 ; free virtual = 62386
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'psl_fpga' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:75]
+WARNING: [Synth 8-5640] Port 'as_sfp0_phy_mgmt_clk_reset' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp0_phy_mgmt_address' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp0_phy_mgmt_read' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp0_phy_mgmt_readdata' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp0_phy_mgmt_waitrequest' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp0_phy_mgmt_write' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp0_phy_mgmt_writedata' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp0_tx_ready' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp0_rx_ready' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp0_tx_forceelecidle' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp0_pll_locked' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp0_rx_is_lockedtoref' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp0_rx_is_lockedtodata' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp0_rx_signaldetect' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp0_tx_coreclk' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp0_tx_clk' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp0_rx_clk' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp0_tx_parallel_data' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp0_rx_parallel_data' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp0_tx_fault' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp0_mod_abs' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp0_rx_los' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp0_tx_disable' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp0_rs0' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp0_rs1' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp0_scl' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp0_en' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp0_sda' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp0_sda' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp0_sda_oe' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp1_phy_mgmt_clk_reset' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp1_phy_mgmt_address' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp1_phy_mgmt_read' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp1_phy_mgmt_readdata' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp1_phy_mgmt_waitrequest' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp1_phy_mgmt_write' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp1_phy_mgmt_writedata' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp1_tx_ready' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp1_rx_ready' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp1_tx_forceelecidle' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp1_pll_locked' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp1_rx_is_lockedtoref' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp1_rx_is_lockedtodata' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp1_rx_signaldetect' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp1_tx_coreclk' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp1_tx_clk' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp1_rx_clk' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp1_tx_parallel_data' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp1_rx_parallel_data' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp1_tx_fault' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp1_mod_abs' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp1_rx_los' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp1_tx_disable' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp1_rs0' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp1_rs1' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp1_scl' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp1_en' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'sa_sfp1_sda' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp1_sda' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_sfp1_sda_oe' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_refclk_sfp_fs' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_refclk_sfp_fs_en' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_red_led' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+WARNING: [Synth 8-5640] Port 'as_green_led' is missing in component declaration [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:77]
+INFO: [Synth 8-3491] module 'psl_accel' declared at '/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_accel.vhdl:9' bound to instance 'a0' of component 'psl_accel' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:329]
+INFO: [Synth 8-638] synthesizing module 'psl_accel' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_accel.vhdl:161]
+INFO: [Synth 8-3491] module 'afu' declared at '/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/afu_buffered.vhd:9' bound to instance 'afu0' of component 'afu' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_accel.vhdl:226]
+INFO: [Synth 8-638] synthesizing module 'afu' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/afu_buffered.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'frame' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/frame.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'control' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/control.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'cu' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:19]
+INFO: [Synth 8-226] default block is never used [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:62]
+INFO: [Synth 8-3491] module 'matix_mul' declared at '/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/matix_mul.v:1' bound to instance 'mm0' of component 'matix_mul' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'matix_mul' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/matix_mul.v:1]
+INFO: [Synth 8-638] synthesizing module 'ma_group' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/ma_group.v:1]
+INFO: [Synth 8-638] synthesizing module 'multiply_accumulator' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/multiply_accumulator.v:1]
+INFO: [Synth 8-638] synthesizing module 'addition_control' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/addition_control.v:1]
+INFO: [Synth 8-638] synthesizing module 'RAM_control' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/RAM_control.v:1]
+INFO: [Synth 8-256] done synthesizing module 'RAM_control' (1#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/RAM_control.v:1]
+WARNING: [Synth 8-6014] Unused sequential element select_delay_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/addition_control.v:55]
+INFO: [Synth 8-256] done synthesizing module 'addition_control' (2#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/addition_control.v:1]
+INFO: [Synth 8-638] synthesizing module 'CSA_carry' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/CSA_carry.v:1]
+INFO: [Synth 8-256] done synthesizing module 'CSA_carry' (3#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/CSA_carry.v:1]
+INFO: [Synth 8-638] synthesizing module 'unum_CSA' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/unum_CSA.v:1]
+INFO: [Synth 8-638] synthesizing module 'LZC' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/unum_CSA.v:250]
+INFO: [Synth 8-638] synthesizing module 'BNE' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/unum_CSA.v:290]
+INFO: [Synth 8-256] done synthesizing module 'BNE' (4#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/unum_CSA.v:290]
+INFO: [Synth 8-638] synthesizing module 'NLC' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/unum_CSA.v:301]
+INFO: [Synth 8-256] done synthesizing module 'NLC' (5#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/unum_CSA.v:301]
+INFO: [Synth 8-256] done synthesizing module 'LZC' (6#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/unum_CSA.v:250]
+WARNING: [Synth 8-6014] Unused sequential element NaN_2_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/unum_CSA.v:94]
+WARNING: [Synth 8-6014] Unused sequential element adress_even_5_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/unum_CSA.v:222]
+WARNING: [Synth 8-6014] Unused sequential element adress_odd_5_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/unum_CSA.v:223]
+WARNING: [Synth 8-3936] Found unconnected internal register 'expo_numob2_reg' and it is trimmed from '9' to '7' bits. [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/unum_CSA.v:167]
+WARNING: [Synth 8-3936] Found unconnected internal register 'expo_numob1_reg' and it is trimmed from '9' to '7' bits. [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/unum_CSA.v:145]
+WARNING: [Synth 8-3936] Found unconnected internal register 'expo_numo_reg' and it is trimmed from '9' to '7' bits. [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/unum_CSA.v:120]
+INFO: [Synth 8-256] done synthesizing module 'unum_CSA' (7#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/unum_CSA.v:1]
+INFO: [Synth 8-638] synthesizing module 'normalization' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/normalization.v:1]
+INFO: [Synth 8-638] synthesizing module 'NLC64' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/normalization.v:139]
+INFO: [Synth 8-638] synthesizing module 'PENC' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/normalization.v:191]
+INFO: [Synth 8-256] done synthesizing module 'PENC' (8#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/normalization.v:191]
+INFO: [Synth 8-638] synthesizing module 'PENC16' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/normalization.v:166]
+INFO: [Synth 8-256] done synthesizing module 'PENC16' (9#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/normalization.v:166]
+INFO: [Synth 8-256] done synthesizing module 'NLC64' (10#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/normalization.v:139]
+WARNING: [Synth 8-6014] Unused sequential element rst_0_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/normalization.v:27]
+WARNING: [Synth 8-6014] Unused sequential element overflow_b_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/normalization.v:94]
+WARNING: [Synth 8-6014] Unused sequential element isInf_4_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/normalization.v:126]
+WARNING: [Synth 8-3936] Found unconnected internal register 'blk_0_reg' and it is trimmed from '3' to '2' bits. [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/normalization.v:23]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fraction_b_reg' and it is trimmed from '32' to '31' bits. [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/normalization.v:91]
+INFO: [Synth 8-256] done synthesizing module 'normalization' (11#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/normalization.v:1]
+WARNING: [Synth 8-6014] Unused sequential element adr_even_carry_buff_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/multiply_accumulator.v:103]
+WARNING: [Synth 8-6014] Unused sequential element adr_odd_carry_buff_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/multiply_accumulator.v:104]
+WARNING: [Synth 8-6014] Unused sequential element clr_odd_buff_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/multiply_accumulator.v:105]
+INFO: [Synth 8-256] done synthesizing module 'multiply_accumulator' (12#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/multiply_accumulator.v:1]
+INFO: [Synth 8-638] synthesizing module 'mm_buffer' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/ma_group.v:95]
+WARNING: [Synth 8-6014] Unused sequential element unum1_buff_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/ma_group.v:112]
+WARNING: [Synth 8-6014] Unused sequential element unum2_buff_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/ma_group.v:113]
+WARNING: [Synth 8-6014] Unused sequential element finish_buff_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/ma_group.v:114]
+WARNING: [Synth 8-6014] Unused sequential element rst_buff_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/ma_group.v:115]
+WARNING: [Synth 8-6014] Unused sequential element valid_buff_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/ma_group.v:116]
+INFO: [Synth 8-256] done synthesizing module 'mm_buffer' (13#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/ma_group.v:95]
+INFO: [Synth 8-256] done synthesizing module 'ma_group' (14#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/ma_group.v:1]
+INFO: [Synth 8-638] synthesizing module 'circular_buffer1' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/circular_buffer1.v:1]
+INFO: [Synth 8-638] synthesizing module 'ram_input1' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/ip_ram_input1/synth/ram_input1.vhd:71]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at '/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/ip_ram_input1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/ip_ram_input1/synth/ram_input1.vhd:234]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed. 
+INFO: [Synth 8-256] done synthesizing module 'ram_input1' (23#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/ip_ram_input1/synth/ram_input1.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element wraddress_buff_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/circular_buffer1.v:101]
+WARNING: [Synth 8-6014] Unused sequential element rdempty_buff_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/circular_buffer1.v:121]
+WARNING: [Synth 8-6014] Unused sequential element rdempty_buff2_reg was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/circular_buffer1.v:141]
+INFO: [Synth 8-256] done synthesizing module 'circular_buffer1' (24#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/circular_buffer1.v:1]
+INFO: [Synth 8-638] synthesizing module 'circular_buffer2' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/circular_buffer2.v:1]
+INFO: [Synth 8-638] synthesizing module 'ram_input2' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/ip_ram_input2/synth/ram_input2.vhd:71]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at '/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/ip_ram_input1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/ip_ram_input2/synth/ram_input2.vhd:234]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed. 
+INFO: [Synth 8-256] done synthesizing module 'ram_input2' (25#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/ip_ram_input2/synth/ram_input2.vhd:71]
+WARNING: [Synth 8-3936] Found unconnected internal register 'product_reg' and it is trimmed from '32' to '14' bits. [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/circular_buffer2.v:40]
+INFO: [Synth 8-256] done synthesizing module 'circular_buffer2' (26#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/circular_buffer2.v:1]
+INFO: [Synth 8-638] synthesizing module 'outputbuffer' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/output_buffer.v:1]
+INFO: [Synth 8-638] synthesizing module 'ram_output' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/ip_ram_output/synth/ram_output.vhd:71]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at '/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/ip_ram_input1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/ip_ram_output/synth/ram_output.vhd:234]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed. 
+INFO: [Synth 8-256] done synthesizing module 'ram_output' (28#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/ip_ram_output/synth/ram_output.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'outputbuffer' (29#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/output_buffer.v:1]
+INFO: [Synth 8-256] done synthesizing module 'matix_mul' (30#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/matix_mul.v:1]
+WARNING: [Synth 8-614] signal 'r' is read in the process but is not in the sensitivity list [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:159]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[state] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][status] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][wed00_a] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][wed00_b] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][size] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][source] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][destination] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][wed03] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][wed04] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][wed05] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][wed06] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][wed07] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][wed08] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][wed09] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][wed10] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][wed11] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][wed12] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][wed13] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][wed14] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[wed][wed15] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[o][done] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[o][read][valid] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[o][read][stream] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[o][read][address] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[o][read][size] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[o][write][request][valid] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[o][write][request][stream] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[o][write][request][address] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[o][write][request][size] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[o][write][data][valid] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[o][write][data][stream] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[o][write][data][data] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_reg[pull] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element q_reg[wed][status] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element q_reg[wed][wed00_a] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element q_reg[wed][wed00_b] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element q_reg[wed][wed03] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element q_reg[wed][wed05] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element q_reg[wed][wed07] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element q_reg[wed][wed08] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element q_reg[wed][wed09] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element q_reg[wed][wed10] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element q_reg[wed][wed11] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element q_reg[wed][wed12] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element q_reg[wed][wed13] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element q_reg[wed][wed14] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element q_reg[wed][wed15] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element wed_backup_reg[wed][status] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:178]
+WARNING: [Synth 8-6014] Unused sequential element wed_backup_reg[wed][wed00_a] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:178]
+WARNING: [Synth 8-6014] Unused sequential element wed_backup_reg[wed][wed00_b] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:178]
+WARNING: [Synth 8-6014] Unused sequential element wed_backup_reg[wed][wed03] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:178]
+WARNING: [Synth 8-6014] Unused sequential element wed_backup_reg[wed][wed05] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:178]
+WARNING: [Synth 8-6014] Unused sequential element wed_backup_reg[wed][wed07] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:178]
+WARNING: [Synth 8-6014] Unused sequential element wed_backup_reg[wed][wed08] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:178]
+WARNING: [Synth 8-6014] Unused sequential element wed_backup_reg[wed][wed09] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:178]
+WARNING: [Synth 8-6014] Unused sequential element wed_backup_reg[wed][wed10] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:178]
+WARNING: [Synth 8-6014] Unused sequential element wed_backup_reg[wed][wed11] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:178]
+WARNING: [Synth 8-6014] Unused sequential element wed_backup_reg[wed][wed12] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:178]
+WARNING: [Synth 8-6014] Unused sequential element wed_backup_reg[wed][wed13] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:178]
+WARNING: [Synth 8-6014] Unused sequential element wed_backup_reg[wed][wed14] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:178]
+WARNING: [Synth 8-6014] Unused sequential element wed_backup_reg[wed][wed15] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:178]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[wed][status] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[wed][wed00_a] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[wed][wed00_b] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[wed][wed03] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[wed][wed05] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[wed][wed07] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[wed][wed08] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[wed][wed09] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[wed][wed10] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[wed][wed11] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[wed][wed12] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[wed][wed13] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[wed][wed14] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[wed][wed15] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:162]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[pull] was removed.  [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:162]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'cu' (31#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'control' (32#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/control.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'mmio' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/mmio.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'mmio' (33#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/mmio.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'dma' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/dma.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'fifo_unsigned' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/fifo.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'ram_dual_unsigned' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/ram.vhd:226]
+INFO: [Synth 8-256] done synthesizing module 'ram_dual_unsigned' (34#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/ram.vhd:226]
+INFO: [Synth 8-256] done synthesizing module 'fifo_unsigned' (35#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/fifo.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'fifo' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/fifo.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'ram_dual' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/ram.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'ram_dual' (36#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/ram.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'fifo' (37#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/fifo.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'ram_dual__parameterized0' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/ram.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'ram_dual__parameterized0' (37#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/ram.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ram_dual__parameterized1' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/ram.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'ram_dual__parameterized1' (37#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/ram.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ram_dual_unsigned__parameterized0' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/ram.vhd:226]
+INFO: [Synth 8-256] done synthesizing module 'ram_dual_unsigned__parameterized0' (37#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/ram.vhd:226]
+INFO: [Synth 8-256] done synthesizing module 'dma' (38#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/dma.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'frame' (39#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/frame.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'inbuf' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/buffers.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'inbuf' (40#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/buffers.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'outbuf' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/buffers.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'outbuf' (41#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/buffers.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'afu' (42#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/afu_buffered.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'psl_accel' (43#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_accel.vhdl:161]
+INFO: [Synth 8-637] synthesizing blackbox instance 'b' of component 'base_img' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:390]
+WARNING: [Synth 8-3848] Net o_debug in module/entity psl_fpga does not have driver. [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:65]
+INFO: [Synth 8-256] done synthesizing module 'psl_fpga' (44#1) [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:75]
+WARNING: [Synth 8-3331] design dma has unconnected port i[b][rvalid]
+WARNING: [Synth 8-3331] design dma has unconnected port i[b][rtag][7]
+WARNING: [Synth 8-3331] design dma has unconnected port i[b][rad][5]
+WARNING: [Synth 8-3331] design dma has unconnected port i[b][rad][4]
+WARNING: [Synth 8-3331] design dma has unconnected port i[b][rad][3]
+WARNING: [Synth 8-3331] design dma has unconnected port i[b][rad][2]
+WARNING: [Synth 8-3331] design dma has unconnected port i[b][rad][1]
+WARNING: [Synth 8-3331] design dma has unconnected port i[b][wtag][7]
+WARNING: [Synth 8-3331] design dma has unconnected port i[b][wad][5]
+WARNING: [Synth 8-3331] design dma has unconnected port i[b][wad][4]
+WARNING: [Synth 8-3331] design dma has unconnected port i[b][wad][3]
+WARNING: [Synth 8-3331] design dma has unconnected port i[b][wad][2]
+WARNING: [Synth 8-3331] design dma has unconnected port i[b][wad][1]
+WARNING: [Synth 8-3331] design dma has unconnected port i[r][response][7]
+WARNING: [Synth 8-3331] design dma has unconnected port i[r][response][6]
+WARNING: [Synth 8-3331] design dma has unconnected port i[r][response][5]
+WARNING: [Synth 8-3331] design dma has unconnected port i[r][response][4]
+WARNING: [Synth 8-3331] design dma has unconnected port i[r][response][3]
+WARNING: [Synth 8-3331] design dma has unconnected port i[r][response][2]
+WARNING: [Synth 8-3331] design dma has unconnected port i[r][response][1]
+WARNING: [Synth 8-3331] design dma has unconnected port i[r][response][0]
+WARNING: [Synth 8-3331] design mm_buffer has unconnected port clk
+WARNING: [Synth 8-3331] design normalization has unconnected port blk[2]
+WARNING: [Synth 8-3331] design normalization has unconnected port rst
+WARNING: [Synth 8-3331] design BNE has unconnected port a[7]
+WARNING: [Synth 8-3331] design RAM_control has unconnected port wraddress[1]
+WARNING: [Synth 8-3331] design RAM_control has unconnected port wraddress[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[35]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[34]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[33]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[32]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[31]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[30]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[29]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[28]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[27]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[26]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[25]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[24]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[23]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[22]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[21]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[20]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[19]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[18]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[17]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port DINB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port ram_rstram_a
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized27 has unconnected port ram_rstreg_a
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[35]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[34]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[33]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[32]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[31]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[30]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[29]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[28]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[27]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[26]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[25]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[24]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[23]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[22]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[21]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[20]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[19]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[18]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[17]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized26 has unconnected port DINB[11]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:10 ; elapsed = 00:03:12 . Memory (MB): peak = 1688.820 ; gain = 423.012 ; free physical = 5967 ; free virtual = 62175
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:12 ; elapsed = 00:03:16 . Memory (MB): peak = 1688.820 ; gain = 423.012 ; free physical = 5999 ; free virtual = 62210
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 159 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7vx690tffg1157-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2561.570 ; gain = 0.008 ; free physical = 5079 ; free virtual = 61291
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:04:05 ; elapsed = 00:04:05 . Memory (MB): peak = 2561.570 ; gain = 1295.762 ; free physical = 5626 ; free virtual = 61838
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1157-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:04:05 ; elapsed = 00:04:05 . Memory (MB): peak = 2561.570 ; gain = 1295.762 ; free physical = 5626 ; free virtual = 61838
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for a0/afu0/f0/c0/cu0/mm0/input_buffer1/ram0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a0/afu0/f0/c0/cu0/mm0/input_buffer2/ram0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a0/afu0/f0/c0/cu0/mm0/output_buffer1/output0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:04:05 ; elapsed = 00:04:05 . Memory (MB): peak = 2561.570 ; gain = 1295.762 ; free physical = 5626 ; free virtual = 61838
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "finish" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_repeat" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "stop_flag" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "finish_2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "isZero_1" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "isZero_1" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "output_finish" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'r_reg[state]' in module 'control'
+INFO: [Synth 8-5546] ROM "v[state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[o][ca][reset]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[o][ah][running]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "v[o][cd][write][request][stream]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[mmio_rdata]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "v_reg[rse][engine][0][touch][touch]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v_reg[wse][engine][0][touch][touch]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "v[rb][pull_flip]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[wb][pull_flip]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'rdaddress_reg' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 'wraddress_reg' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/rtl/cu.vhd:68]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                            00001 |                              001
+                    idle |                            00010 |                              000
+                     wed |                            00100 |                              010
+                      go |                            01000 |                              011
+                    done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_reg[state]' using encoding 'one-hot' in module 'control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:04:10 ; elapsed = 00:04:12 . Memory (MB): peak = 2561.570 ; gain = 1295.762 ; free physical = 5657 ; free virtual = 61869
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |multiply_accumulator |           8|     10455|
+|2     |ma_group__GC0        |           1|       571|
+|3     |matix_mul__GC0       |           1|      6282|
+|4     |cu__GC0              |           1|      9185|
+|5     |control__GC0         |           1|     13494|
+|6     |frame__GC0           |           1|     21651|
+|7     |afu__GC0             |           1|      1465|
+|8     |base_img_bbox__GD    |           1|       819|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "isZero_1" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "isZero_1" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+WARNING: [Synth 8-3936] Found unconnected internal register 'fraction_2_reg' and it is trimmed from '128' to '127' bits. [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/normalization.v:69]
+WARNING: [Synth 8-3936] Found unconnected internal register 'input_buffer2/row_buff_reg' and it is trimmed from '16' to '14' bits. [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/circular_buffer2.v:30]
+WARNING: [Synth 8-3936] Found unconnected internal register 'input_buffer1/product_reg' and it is trimmed from '32' to '14' bits. [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/circular_buffer1.v:43]
+WARNING: [Synth 8-3936] Found unconnected internal register 'input_buffer1/row_buff_reg' and it is trimmed from '16' to '14' bits. [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/circular_buffer1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'input_buffer1/product_reg' and it is trimmed from '32' to '14' bits. [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/circular_buffer1.v:43]
+WARNING: [Synth 8-3936] Found unconnected internal register 'input_buffer1/row_buff_reg' and it is trimmed from '16' to '14' bits. [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/circular_buffer1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'input_buffer2/column_buff_reg' and it is trimmed from '16' to '14' bits. [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/circular_buffer2.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'input_buffer1/column_buff_reg' and it is trimmed from '16' to '14' bits. [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/circular_buffer1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'input_buffer1/column_buff_reg' and it is trimmed from '16' to '14' bits. [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/afu/mm/circular_buffer1.v:33]
+INFO: [Synth 8-5546] ROM "input_buffer1/time_repeat" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "input_buffer1/finish" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "output_finish" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "p_1_out0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[wb][pull_flip]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[rb][pull_flip]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "v_reg[rse][engine][0][touch][touch]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v_reg[wse][engine][0][touch][touch]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multiply_accumulator:/unum_csa1/\shift_result_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multiply_accumulator:/unum_csa1/\shift_result_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multiply_accumulator:/unum_csa1/\shift_result_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multiply_accumulator:/unum_csa1/\shift_result_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multiply_accumulator:/unum_csa1/\shift_result_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multiply_accumulator:/unum_csa1/\shift_result_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multiply_accumulator:/unum_csa1/\shift_result_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multiply_accumulator:/unum_csa1/\shift_result_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multiply_accumulator:/unum_csa1/\shift_result_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multiply_accumulator:/unum_csa1/\shift_result_reg[9] )
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[30]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[29]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[26]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[25]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[24]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[23]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[22]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[21]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[20]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[19]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[18]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[17]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[16]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[15]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[14]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[13]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[12]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[11]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[10]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[9]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[8]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[7]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[6]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[5]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[4]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[3]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[2]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[1]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp2_2_reg[0]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[30]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[29]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[26]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[25]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[24]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[23]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[22]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[21]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[20]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[19]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[18]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[17]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[16]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[15]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[14]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[13]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[12]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[11]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[10]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[9]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[8]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[7]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[6]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[5]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[4]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[3]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[2]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[1]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (temp1_2_reg[0]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (shift_result_reg[9]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (shift_result_reg[8]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (shift_result_reg[7]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (shift_result_reg[6]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (shift_result_reg[5]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (shift_result_reg[4]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (shift_result_reg[3]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (shift_result_reg[2]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (shift_result_reg[1]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (shift_result_reg[0]) is unused and will be removed from module unum_CSA.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[35]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[34]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[33]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[32]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[31]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[30]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[29]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[28]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[27]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[26]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[25]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[24]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[23]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[22]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[21]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[20]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[19]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[18]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[17]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[16]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[15]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[14]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[13]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[12]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[11]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[10]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[9]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[8]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[7]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[6]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[5]) is unused and will be removed from module normalization.
+WARNING: [Synth 8-3332] Sequential element (frac_1_reg[4]) is unused and will be removed from module normalization.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cu0i_9/\r_reg[o][write][request][size][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cu0i_9/\r_reg[o][write][request][size][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cu0i_9/\r_reg[o][write][request][size][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cu0i_9/\r_reg[o][write][request][size][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cu0i_9/\r_reg[o][write][request][size][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cu0i_9/\r_reg[o][write][request][size][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cu0i_9/\r_reg[o][write][request][size][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cu0i_9/\r_reg[o][write][request][stream][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cu0i_9/\r_reg[o][read][size][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cu0i_9/\r_reg[o][read][size][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cu0i_9/\r_reg[o][read][size][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cu0i_9/\r_reg[o][read][size][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cu0i_9/\r_reg[o][read][size][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cu0i_9/\r_reg[o][read][size][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cu0i_9/\r_reg[o][read][size][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cu0i_9/\r_reg[o][read][stream][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0i_11/d0/\r_reg[write_touch] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0i_11/d0/\r_reg[wse][engine][0][touch][touch] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0i_11/d0/\r_reg[rse][engine][0][touch][touch] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0i_11/d0/\r_reg[o][c][com][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0i_11/d0/\r_reg[o][c][com][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0i_11/d0/\r_reg[o][c][com][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0i_11/d0/\r_reg[o][c][com][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0i_11/d0/\r_reg[o][c][com][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0i_11/d0/\r_reg[o][c][com][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0i_11/d0/\r_reg[o][c][com][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0i_11/d0/\r_reg[o][c][com][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0i_11/d0/\r_reg[o][c][com][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (f0i_11/d0/\r_reg[rse][engine][0][hold][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (c0i_10/\r_reg[o][cd][write][request][size][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (c0i_10/\r_reg[o][cd][write][request][size][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (c0i_10/\r_reg[o][cd][write][request][size][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (c0i_10/\r_reg[o][cd][write][request][size][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (c0i_10/\r_reg[o][cd][write][request][size][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (c0i_10/\r_reg[o][cd][write][request][size][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (c0i_10/\r_reg[o][cd][write][request][stream][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (c0i_10/\r_reg[o][cd][read][size][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (c0i_10/\r_reg[o][cd][read][size][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (c0i_10/\r_reg[o][cd][read][size][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (c0i_10/\r_reg[o][cd][read][size][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (c0i_10/\r_reg[o][cd][read][size][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (c0i_10/\r_reg[o][cd][read][size][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (c0i_10/\r_reg[o][cd][read][size][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (afu0i_12/\b1/o_reg[c][com][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (afu0i_12/\b1/o_reg[c][com][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (afu0i_12/\b1/o_reg[c][com][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (afu0i_12/\b1/o_reg[c][com][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (afu0i_12/\b1/o_reg[c][com][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (afu0i_12/\b1/o_reg[c][com][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (afu0i_12/\b1/o_reg[c][com][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (afu0i_12/\b1/o_reg[c][com][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (afu0i_12/\b1/o_reg[c][com][12] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:43 ; elapsed = 00:04:46 . Memory (MB): peak = 2561.570 ; gain = 1295.762 ; free physical = 5548 ; free virtual = 61759
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |multiply_accumulator    |          63|      7652|
+|2     |ma_group__GC0           |           7|       547|
+|3     |matix_mul__GC0          |           1|      5372|
+|4     |cu__GC0                 |           1|      4378|
+|5     |control__GC0            |           1|      4953|
+|6     |frame__GC0              |           1|      6195|
+|7     |afu__GC0                |           1|      1371|
+|8     |base_img_bbox__GD       |           1|       819|
+|9     |ma_group__GC0__1        |           1|       548|
+|10    |multiply_accumulator__1 |           1|      7663|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:53 ; elapsed = 00:04:56 . Memory (MB): peak = 2561.570 ; gain = 1295.762 ; free physical = 5392 ; free virtual = 61603
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:53 ; elapsed = 00:04:56 . Memory (MB): peak = 2561.570 ; gain = 1295.762 ; free physical = 5390 ; free virtual = 61602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |multiply_accumulator    |          63|      7652|
+|2     |ma_group__GC0           |           7|       547|
+|3     |matix_mul__GC0          |           1|      5372|
+|4     |cu__GC0                 |           1|      4378|
+|5     |control__GC0            |           1|      4953|
+|6     |frame__GC0              |           1|      6195|
+|7     |afu__GC0                |           1|      1371|
+|8     |base_img_bbox__GD       |           1|       819|
+|9     |ma_group__GC0__1        |           1|       548|
+|10    |multiply_accumulator__1 |           1|      7663|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wb/r_w.mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wb/r_w.mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wb/r_w.mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wb/r_w.mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wb/r_w.mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wb/r_w.mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wb/r_w.mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wb/r_w.mem_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wb/r_w.mem_reg_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wb/r_w.mem_reg_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wb/r_w.mem_reg_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wb/r_w.mem_reg_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wb/r_w.mem_reg_12 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wb/r_w.mem_reg_13 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wb/r_w.mem_reg_14 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rb0/r_w.mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rb0/r_w.mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rb0/r_w.mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rb0/r_w.mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rb0/r_w.mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rb0/r_w.mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rb0/r_w.mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rb0/r_w.mem_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rb1/r_w.mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rb1/r_w.mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rb1/r_w.mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rb1/r_w.mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rb1/r_w.mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rb1/r_w.mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rb1/r_w.mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rb1/r_w.mem_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/rh/r_w.mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wh/r_w.mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wqs[0].wqb/ram/r_w.mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wqs[0].wqb/ram/r_w.mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wqs[0].wqb/ram/r_w.mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wqs[0].wqb/ram/r_w.mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wqs[0].wqb/ram/r_w.mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wqs[0].wqb/ram/r_w.mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wqs[0].wqb/ram/r_w.mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wqs[0].wqb/ram/r_w.mem_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wqs[0].wqb/ram/r_w.mem_reg_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wqs[0].wqb/ram/r_w.mem_reg_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wqs[0].wqb/ram/r_w.mem_reg_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wqs[0].wqb/ram/r_w.mem_reg_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wqs[0].wqb/ram/r_w.mem_reg_12 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wqs[0].wqb/ram/r_w.mem_reg_13 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a0/afu0/f0/d0/wqs[0].wqb/ram/r_w.mem_reg_14 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:23 ; elapsed = 00:05:27 . Memory (MB): peak = 2623.484 ; gain = 1357.676 ; free physical = 5207 ; free virtual = 61418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[0].mag/generate_ma[0].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[0].mag/generate_ma[0].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[0].mag/generate_ma[1].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[0].mag/generate_ma[1].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[0].mag/generate_ma[2].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[0].mag/generate_ma[2].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[0].mag/generate_ma[3].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[0].mag/generate_ma[3].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[0].mag/generate_ma[4].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[0].mag/generate_ma[4].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[0].mag/generate_ma[5].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[0].mag/generate_ma[5].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[0].mag/generate_ma[6].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[0].mag/generate_ma[6].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[0].mag/generate_ma[7].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[0].mag/generate_ma[7].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[1].mag/generate_ma[0].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[1].mag/generate_ma[0].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[1].mag/generate_ma[1].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[1].mag/generate_ma[1].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[1].mag/generate_ma[2].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[1].mag/generate_ma[2].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[1].mag/generate_ma[3].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[1].mag/generate_ma[3].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[1].mag/generate_ma[4].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[1].mag/generate_ma[4].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[1].mag/generate_ma[5].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[1].mag/generate_ma[5].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[1].mag/generate_ma[6].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[1].mag/generate_ma[6].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[1].mag/generate_ma[7].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[1].mag/generate_ma[7].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[2].mag/generate_ma[0].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[2].mag/generate_ma[0].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[2].mag/generate_ma[1].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[2].mag/generate_ma[1].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[2].mag/generate_ma[2].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[2].mag/generate_ma[2].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[2].mag/generate_ma[3].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[2].mag/generate_ma[3].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[2].mag/generate_ma[4].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[2].mag/generate_ma[4].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[2].mag/generate_ma[5].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[2].mag/generate_ma[5].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[2].mag/generate_ma[6].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[2].mag/generate_ma[6].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[2].mag/generate_ma[7].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[2].mag/generate_ma[7].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[3].mag/generate_ma[0].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[3].mag/generate_ma[0].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[3].mag/generate_ma[1].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[3].mag/generate_ma[1].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[3].mag/generate_ma[2].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[3].mag/generate_ma[2].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[3].mag/generate_ma[3].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[3].mag/generate_ma[3].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[3].mag/generate_ma[4].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[3].mag/generate_ma[4].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[3].mag/generate_ma[5].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[3].mag/generate_ma[5].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[3].mag/generate_ma[6].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[3].mag/generate_ma[6].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[3].mag/generate_ma[7].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[3].mag/generate_ma[7].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[4].mag/generate_ma[0].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[4].mag/generate_ma[0].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[4].mag/generate_ma[1].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[4].mag/generate_ma[1].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[4].mag/generate_ma[2].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[4].mag/generate_ma[2].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[4].mag/generate_ma[3].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[4].mag/generate_ma[3].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[4].mag/generate_ma[4].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[4].mag/generate_ma[4].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[4].mag/generate_ma[5].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[4].mag/generate_ma[5].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[4].mag/generate_ma[6].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[4].mag/generate_ma[6].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[4].mag/generate_ma[7].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[4].mag/generate_ma[7].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[5].mag/generate_ma[0].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[5].mag/generate_ma[0].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[5].mag/generate_ma[1].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[5].mag/generate_ma[1].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[5].mag/generate_ma[2].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[5].mag/generate_ma[2].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[5].mag/generate_ma[3].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[5].mag/generate_ma[3].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[5].mag/generate_ma[4].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[5].mag/generate_ma[4].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[5].mag/generate_ma[5].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[5].mag/generate_ma[5].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[5].mag/generate_ma[6].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[5].mag/generate_ma[6].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[5].mag/generate_ma[7].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[5].mag/generate_ma[7].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[6].mag/generate_ma[0].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[6].mag/generate_ma[0].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[6].mag/generate_ma[1].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[6].mag/generate_ma[1].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[6].mag/generate_ma[2].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[6].mag/generate_ma[2].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[6].mag/generate_ma[3].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[6].mag/generate_ma[3].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[6].mag/generate_ma[4].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[6].mag/generate_ma[4].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[6].mag/generate_ma[5].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[6].mag/generate_ma[5].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[6].mag/generate_ma[6].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[6].mag/generate_ma[6].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[6].mag/generate_ma[7].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[6].mag/generate_ma[7].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[7].mag/generate_ma[0].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[7].mag/generate_ma[0].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[7].mag/generate_ma[1].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[7].mag/generate_ma[1].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[7].mag/generate_ma[2].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[7].mag/generate_ma[2].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[7].mag/generate_ma[3].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[7].mag/generate_ma[3].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[7].mag/generate_ma[4].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[7].mag/generate_ma[4].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[7].mag/generate_ma[5].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[7].mag/generate_ma[5].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[7].mag/generate_ma[6].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[7].mag/generate_ma[6].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5365] Flop a0/afu0/f0/c0/cu0/mm0/generate_magroup[7].mag/generate_ma[7].ma/normal1/blk_0_reg[1] is being inverted and renamed to a0/afu0/f0/c0/cu0/mm0/generate_magroup[7].mag/generate_ma[7].ma/normal1/blk_0_reg[1]_inv.
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/FSM_onehot_r_reg[state_n_0_][2]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/FSM_onehot_r_reg[state_n_0_][3]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addrb2 [0] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addrb2 [1] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addrb2 [2] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addrb2 [3] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addrb2 [4] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addrb2 [5] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addrb2 [6] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addrb2 [7] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addra2 [0] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addra2 [1] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addra2 [2] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addra2 [3] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addra2 [4] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addra2 [5] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addra2 [6] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addra2 [7] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/addra2 [8] because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \a0/afu0/f0/c0/cu0/mm0/input_buffer2/wea2  because some of its loads are not in same hierarchy as its driver   
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:40 ; elapsed = 00:05:45 . Memory (MB): peak = 2814.129 ; gain = 1548.320 ; free physical = 5186 ; free virtual = 61398
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:42 ; elapsed = 00:05:47 . Memory (MB): peak = 2814.129 ; gain = 1548.320 ; free physical = 5185 ; free virtual = 61397
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:24 ; elapsed = 00:06:30 . Memory (MB): peak = 2814.129 ; gain = 1548.320 ; free physical = 5102 ; free virtual = 61313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:25 ; elapsed = 00:06:30 . Memory (MB): peak = 2814.129 ; gain = 1548.320 ; free physical = 5102 ; free virtual = 61314
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:27 ; elapsed = 00:06:32 . Memory (MB): peak = 2814.129 ; gain = 1548.320 ; free physical = 5089 ; free virtual = 61301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:28 ; elapsed = 00:06:33 . Memory (MB): peak = 2814.129 ; gain = 1548.320 ; free physical = 5090 ; free virtual = 61301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |base_img      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+-------+
+|      |Cell          |Count  |
++------+--------------+-------+
+|1     |base_img_bbox |      1|
+|2     |CARRY4        |  14230|
+|3     |DSP48E1       |    130|
+|4     |DSP48E1_1     |    129|
+|5     |DSP48E1_3     |     64|
+|6     |LUT1          |  22769|
+|7     |LUT2          |  50243|
+|8     |LUT3          |  34076|
+|9     |LUT4          |   6940|
+|10    |LUT5          |  19931|
+|11    |LUT6          |  50916|
+|12    |MUXF7         |    536|
+|13    |MUXF8         |    267|
+|14    |RAM32M        |   3584|
+|15    |RAM64M        |    336|
+|16    |RAM64X1D      |     16|
+|17    |RAMB18E1      |    114|
+|18    |RAMB18E1_1    |      1|
+|19    |RAMB18E1_2    |      6|
+|20    |RAMB36E1      |     16|
+|21    |RAMB36E1_1    |     28|
+|22    |RAMB36E1_2    |     42|
+|23    |SRL16E        |    513|
+|24    |SRLC32E       |     64|
+|25    |FDRE          | 128442|
+|26    |FDSE          |     15|
+|27    |LD            |    512|
++------+--------------+-------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:28 ; elapsed = 00:06:33 . Memory (MB): peak = 2814.129 ; gain = 1548.320 ; free physical = 5090 ; free virtual = 61301
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 359 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:40 ; elapsed = 00:05:51 . Memory (MB): peak = 2814.129 ; gain = 675.570 ; free physical = 5161 ; free virtual = 61373
+Synthesis Optimization Complete : Time (s): cpu = 00:06:28 ; elapsed = 00:06:34 . Memory (MB): peak = 2814.133 ; gain = 1548.320 ; free physical = 5164 ; free virtual = 61375
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 19208 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 4 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'base_img' instantiated as 'b' [/shares/bulk/jianyuchen/capi_development_25015/alphadata/adv7_capi_1_1_release/Sources/top/psl_fpga.vhdl:390]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4448 instances were transformed.
+  LD => LDCE: 512 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 3584 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 336 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 16 instances
+
+329 Infos, 383 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:07:18 ; elapsed = 00:07:25 . Memory (MB): peak = 2867.961 ; gain = 1657.484 ; free physical = 5000 ; free virtual = 61211
