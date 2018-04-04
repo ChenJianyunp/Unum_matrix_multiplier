@@ -38,6 +38,7 @@ Steps to flash the fpga (on TACC PowerPC):
 sudo /tools/ppc_64/capi_flash/capi-flash-fpga.sh psl_fpga.dat
 ````
 Choose card0 (Alpha-data Xilinx 7)<br>
+WARNING: each time, after flashing, it doesn't work when you run the host program at the first time, it will return "respond count: 2", just "ctrl + c" to kill it and run again.  
 Remind: please choose card1 if you use Atera Nallatech 5SGXMA7H2F35C2
 
 Steps to run the host software (on TACC PowerPC):
