@@ -1,3 +1,8 @@
+/**************************
+Host program for posit matrix multiply unit.
+
+************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -47,13 +52,17 @@ struct wed {
 int main (int argc, char *argv[]) {
 
   __u32 copy_size;
-  unsigned int row,row2,column,num_result;
+  unsigned int row,column2,column,num_result;
   struct timeval tv1,tv2,tv3,tv4,tv5;
 	struct timezone tz;
-  row=128;
-  column=128;
-  row2=128;
-  num_result=row*row2*4;
+  
+  //size of two input matrices is row*column and column*column2
+  
+  row=128;     //64 times n
+  column=128;  //larger than 13
+  column2=128;		//64 times n
+  
+  num_result=row*column2*4;  ///should be smaller than 128*128
   
   // parse input arguments
 //  if (argc != 2) {
@@ -63,7 +72,7 @@ int main (int argc, char *argv[]) {
 //    copy_size = strtoul(argv[1], NULL, 0);
 //  }
 
-  copy_size=(__u32)(row*column/32+row2*column/32);
+  copy_size=(__u32)(row*column/32+column2*column/32);
   cout<<"copy_size="<<copy_size<<endl;
 
   __u64 *source = NULL;
@@ -126,20 +135,20 @@ int main (int argc, char *argv[]) {
 //    cout <<"content is: ";
   // initialize
   //input matrix1
-  for(unsigned i=row2; i <(row+row2); i++) {
+  for(unsigned i=column2; i <(row+column2); i++) {
     for(unsigned j=0; j < column/2; j++){
     *(source+j+i*column/2) =  (__u64)0x4000000040000000;
-//	*(source+j+i*column/2) =  (__u64) a[i-row2];
+//	*(source+j+i*column/2) =  (__u64) a[i-column2];
 //    *(source+j+i*column/2) =   (__u64)0x0000000000000000;  ///0
-   *(source+j+i*column/2) = (__u64) a[i-row2];
-   *(source2+j+i*column/2) = (__u64) a[i-row2];
+   *(source+j+i*column/2) = (__u64) a[i-column2];
+   *(source2+j+i*column/2) = (__u64) a[i-column2];
     }
   }
-//  *(source+row2*column/2)=(__u64)0x8000000040000000;
-//    *(source+row2*column/2)=(__u64)0x7fef46a540000000;
-//    *(source+row2*column/2+1)=(__u64)0x8010b95b40000000;
+//  *(source+column2*column/2)=(__u64)0x8000000040000000;
+//    *(source+column2*column/2)=(__u64)0x7fef46a540000000;
+//    *(source+column2*column/2+1)=(__u64)0x8010b95b40000000;
 
-for(unsigned i=0; i <row2; i++) {
+for(unsigned i=0; i <column2; i++) {
    for(unsigned j=0; j < column/2; j++){
         *(source+j+i*column/2) =   (__u64)0x4000000040000000;
 //        *(source+j+i*column/2) =   (__u64)0x3199999a3199999a;  ///0.3
@@ -161,14 +170,14 @@ for(unsigned i=0; i <row2; i++) {
   wed0->status = 0;
  // wed0->size = copy_size; 
   //wed0->size =0x00000080;
-  wed0->size =(__u64)row*row2/32;  ///each cacheline contains 32 numbers
+  wed0->size =(__u64)row*column2/32;  ///each cacheline contains 32 numbers
 //  wed0->size=(__u64)1;
   wed0->source = source;
   wed0->destination = destination;
   wed0->wed03=((__u64)column<<32)|((__u64)row);
-  wed0->wed04=(__u64)(row*column+row2*column)/32;  
-  wed0->wed05=(__u64)row2;
-  wed0->wed06=0x0000000000000001;
+  wed0->wed04=(__u64)(row*column+column2*column)/32;  
+  wed0->wed05=(__u64)column2;
+  wed0->wed06=0x0000000000000001; ///it will calculate 2 multiplication of matrix
   wed0->wed07=(__u64)source2;
   wed0->wed08=(__u64)destination2;
 // open afu device
@@ -209,7 +218,7 @@ for(unsigned i=0; i <row2; i++) {
 
   printf("\nmatrix2 is:\n");
   for(unsigned i=0; i < 16*copy_size; i++) {
-    if(i==row2*column/2){
+    if(i==column2*column/2){
 		printf("\nmatrix1 is:\n");
 	}
 	cout <<hex<<(__u64)(*(source+i))<<" ";
@@ -217,7 +226,7 @@ for(unsigned i=0; i <row2; i++) {
 
   printf("\nthe result matrix is:\n");
   for(unsigned i=0;i<row;i++){
-    for(unsigned j=0;j<row2/2;j++){
+    for(unsigned j=0;j<column2/2;j++){
       printf("%08llx ",*(destination+(i*row/2)+j));
     }
     printf("\n");
@@ -225,7 +234,7 @@ for(unsigned i=0; i <row2; i++) {
 
   printf("\nthe result matrix2 is:\n");
   for(unsigned i=0;i<row;i++){
-    for(unsigned j=0;j<row2/2;j++){
+    for(unsigned j=0;j<column2/2;j++){
       printf("%08llx ",*(destination2+(i*row/2)+j));
     }
     printf("\n");
