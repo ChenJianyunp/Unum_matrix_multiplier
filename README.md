@@ -5,7 +5,8 @@ Posit number (or Unum type-III) is a new kind of format proposed by John Gustafs
 Publication
 ----
 The paper for this project is published in ACM digital library, see: https://dl.acm.org/citation.cfm?id=3190340 \
-And a presentation of this project is given on the conference ConGA 2018. Slides:https://posithub.org/conga/2018/docs/2-Jianyu-Chen.pdf \
+And a presentation of this project is given on the conference ConGA 2018, see:\
+Slides:https://posithub.org/conga/2018/docs/2-Jianyu-Chen.pdf \
 Video: https://www.youtube.com/watch?v=aogyhyh5_U4&feature=youtu.be
 
 Directory:
