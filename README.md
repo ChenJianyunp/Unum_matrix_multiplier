@@ -1,7 +1,12 @@
 # Unum_matrix_multiplier
 Matrix multiplier of 32-bit Posit number (Unum type-III) with es=2. This multiplier consists of 64 exact-multiply-accumulators, so it can do mutiplication more accurate than normal ones. This design is based on IBM CAPI interface with the fpga Xilinx Vertex7.<br>
-The paper for this project is published in ACM digital library, see: https://dl.acm.org/citation.cfm?id=3190340
 Posit number (or Unum type-III) is a new kind of format proposed by John Gustafson. For detail of the posit number, see https://posithub.org/docs/Posits4.pdf
+
+Publication
+----
+The paper for this project is published in ACM digital library, see: https://dl.acm.org/citation.cfm?id=3190340 \
+And a presentation of this project is given on the conference ConGA 2018. Slides:https://posithub.org/conga/2018/docs/2-Jianyu-Chen.pdf \
+Video: https://www.youtube.com/watch?v=aogyhyh5_U4&feature=youtu.be
 
 Directory:
 ----
