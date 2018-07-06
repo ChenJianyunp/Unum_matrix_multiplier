@@ -61,7 +61,7 @@ g++ example.cpp -o example -I /tools/ppc_64/libcxl -L /tools/ppc_64/libcxl -lcxl
 Citations to this Posit number design
 ----
 You may cite this work by referring to the following paper:<br>
-A Matrix-Multiply Unit for Posits in Reconfigurable Logic Using (Open)CAPI, to appear in the proceedings of CoNGA 2018
+A Matrix-Multiply Unit for Posits in Reconfigurable Logic Using (Open)CAPI.
 
 If you have some questions or advices, please contact Jianyu Chen, Delft University of Technology, the Netherlands, at chenjy0046@gmail.com 
 
